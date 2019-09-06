@@ -5,9 +5,80 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+ 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+
+.card-arrange {
+	display:flex;
+	width:100%;
+	
 }
+.player-card {
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid grey;
+	border-radius: 20px;
+	width:30%;
+	box-shadow: 0 -1px 0 #e0e0e0, 0 0 5px rgba(0, 0, 0, 0.12),
+	  0 2px 8px rgba(0, 0, 0, 0.24);
+	padding: 1rem;
+	margin: .5rem auto;
+	background:rgba(213, 184, 255, .4);
+  }
+
+  .player-country {
+	font-size: 0.8rem;
+  }
+
+  
+.navbar {
+	align-items: center;
+	border-bottom: 1px solid rgb(221, 221, 221);
+	display: flex;
+	height: 70px;
+	justify-content: space-between;
+	padding: 0 3%;
+	width: 100%;
+	-webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+	box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  }
+  
+  .dark-mode__toggle {
+	background: rgba(213, 184, 255, .4);
+	border-radius: 50px;
+	border: 1px solid black;
+	height: 20px;
+	position: relative;
+	width: 40px;
+  }
+  
+  .toggle {
+	background: grey;
+	border-radius: 50px;
+	height: 18px;
+	left: 0;
+	position: absolute;
+	transition: 0.2s;
+	width: 20px;
+  }
+  
+  .toggled {
+	left: 18px;
+	background: lightpink;
+  }
+
+  
+.dark-mode {
+	color: lightgrey;
+	background-color: #1a0235;
+}
+	.dar-mode .navbar {
+	  background-color: #1a0235;
+	  border: none;
+	}
+  
+  

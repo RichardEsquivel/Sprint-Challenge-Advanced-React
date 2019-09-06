@@ -23,10 +23,16 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
-- [ ] Name three lifecycle methods and their purposes.
-- [ ] What is the purpose of a custom hook?
-- [ ] Why is it important to test our apps?
+If you're working within an older codebase that utilizes classes heavily and that position requires continuing to function within a classes based framework. To refactor the current code is not an option or for very granular detail utilized in classes
 
+- [ ] Name three lifecycle methods and their purposes.
+Render method, this method is used to actually display within the DOM it lets react know that when this method is invoked it should be part of the DOM. 
+ComponentDidMount this method is part of the mounting phase in the React Lifecycle it fires after render and performs a designated action once that component is mounted to the DOM.
+componentDidUpdate this method will be called after each render is finished in each of the render cyles. When a component is receiving updates you want a particular action performed.
+- [ ] What is the purpose of a custom hook?
+Custom hooks allow you reuse stateful logic throughout your components and can be integrated in many different components such as a useLocalStorage custom hook that allows multiple components to use the state of a value within local storage of the window document.
+- [ ] Why is it important to test our apps?
+Testing an app allows you to have a way to perform tests and capture edge cases of user behavior to determine that everything on the page functions correctly. A good test focus on the correct behavior and not the implementation so if implementation needs to be changed a test can be used to determine that behavior is still optimal. Testing allows us to have more confidence in our code and stability along all stages of development.
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
