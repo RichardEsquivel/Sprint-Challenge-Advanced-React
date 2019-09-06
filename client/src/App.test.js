@@ -6,16 +6,15 @@ import DarkSlider from './components/DarkSlider.js';
 
 //everything will display in App will test an integrated test here and that everything displays to the UI
 
-describe('App Tests Integrated', () => {
-	test('App renders correctly without crashing', async () => {
-		await render(<App />);
-	});
 
-	test('Navbar renders correctly without crashing', async () => {
-		await render(<DarkSlider />);
-	}
-	)
+test('App renders correctly without crashing', async () => {
+	await render(<App />);
+});
 
+test('Navbar renders correctly without crashing', async () => {
+	await render(<DarkSlider />);
 }
 )
+
+
 
