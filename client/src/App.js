@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
+import PlayerList from './components/PlayerList.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+
+
+
+	return (
+		// Gave Route 'exact' path to movieList component so it is only displayed on the declared home page address of local host 3000/
+		<div>
+			{/* <Route exact path="/b" component={PlayerList} />  */}
+
+			<Route exact path="/" render={() =>
+				<PlayerList />
+			} />
+
+
+		</div>
+	);
+};
 
 export default App;
