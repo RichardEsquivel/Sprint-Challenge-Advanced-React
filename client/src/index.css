@@ -73,11 +73,11 @@ body {
 
   
 .dark-mode {
-	color: #fff;
-	background-color: #313843;
+	color: lightgrey;
+	background-color: #1a0235;
 }
 	.dar-mode .navbar {
-	  background-color: #1F2022;
+	  background-color: #1a0235;
 	  border: none;
 	}
   
