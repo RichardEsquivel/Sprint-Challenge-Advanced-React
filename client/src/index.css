@@ -48,7 +48,7 @@ body {
   }
   
   .dark-mode__toggle {
-	background: papayawhip;
+	background: rgba(213, 184, 255, .4);
 	border-radius: 50px;
 	border: 1px solid black;
 	height: 20px;
@@ -57,7 +57,7 @@ body {
   }
   
   .toggle {
-	background: #f68819;
+	background: grey;
 	border-radius: 50px;
 	height: 18px;
 	left: 0;
@@ -68,6 +68,7 @@ body {
   
   .toggled {
 	left: 18px;
+	background: lightpink;
   }
 
   
